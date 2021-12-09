@@ -1,7 +1,7 @@
 import argparse
 
-from app import client
-from config import CONFIG_VALUES
+from .app import client
+from .config import CONFIG_VALUES
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='zspotify',

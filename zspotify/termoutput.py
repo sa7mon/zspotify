@@ -1,8 +1,8 @@
 from enum import Enum
 from tqdm import tqdm
 
-from config import PRINT_SPLASH, PRINT_SKIPS, PRINT_DOWNLOAD_PROGRESS, PRINT_ERRORS, PRINT_DOWNLOADS, PRINT_API_ERRORS
-from zspotify import ZSpotify
+from .config import PRINT_SPLASH, PRINT_SKIPS, PRINT_DOWNLOAD_PROGRESS, PRINT_ERRORS, PRINT_DOWNLOADS, PRINT_API_ERRORS
+from .zspotify import ZSpotify
 
 
 class PrintChannel(Enum):

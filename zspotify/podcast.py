@@ -3,10 +3,10 @@ from typing import Optional, Tuple
 
 from librespot.metadata import EpisodeId
 
-from const import (ERROR, ID, ITEMS, NAME, SHOW)
-from termoutput import PrintChannel, Printer
-from utils import create_download_directory, fix_filename
-from zspotify import ZSpotify
+from .const import (ERROR, ID, ITEMS, NAME, SHOW)
+from .termoutput import PrintChannel, Printer
+from .utils import create_download_directory, fix_filename
+from .zspotify import ZSpotify
 
 EPISODE_INFO_URL = 'https://api.spotify.com/v1/episodes'
 SHOWS_URL = 'https://api.spotify.com/v1/shows'

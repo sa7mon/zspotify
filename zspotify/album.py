@@ -1,8 +1,8 @@
-from const import ITEMS, ARTISTS, NAME, ID
-from termoutput import Printer
-from track import download_track
-from utils import fix_filename
-from zspotify import ZSpotify
+from .const import ITEMS, ARTISTS, NAME, ID
+from .termoutput import Printer
+from .track import download_track
+from .utils import fix_filename
+from .zspotify import ZSpotify
 
 ALBUM_URL = 'https://api.spotify.com/v1/albums'
 ARTIST_URL = 'https://api.spotify.com/v1/artists'

@@ -9,15 +9,15 @@ from librespot.audio.decoders import AudioQuality
 from librespot.metadata import TrackId
 from ffmpy import FFmpeg
 
-from const import TRACKS, ALBUM, GENRES, GENRE, NAME, ITEMS, DISC_NUMBER, TRACK_NUMBER, IS_PLAYABLE, ARTISTS, IMAGES, URL, \
+from .const import TRACKS, ALBUM, GENRES, GENRE, NAME, ITEMS, DISC_NUMBER, TRACK_NUMBER, IS_PLAYABLE, ARTISTS, IMAGES, URL, \
     RELEASE_DATE, ID, TRACKS_URL, SAVED_TRACKS_URL, TRACK_STATS_URL, CODEC_MAP, EXT_MAP, DURATION_MS
-from termoutput import Printer, PrintChannel
-from utils import fix_filename, set_audio_tags, set_music_thumbnail, create_download_directory, \
-    get_directory_song_ids, add_to_directory_song_ids, get_previously_downloaded, add_to_archive, fmt_seconds
-from zspotify import ZSpotify
+from .termoutput import Printer, PrintChannel
+from .utils import fix_filename, set_audio_tags, set_music_thumbnail, create_download_directory, \
+    get_directory_song_ids, add_to_directory_song_ids, get_previously_downloaded, add_to_archive, \
+    fmt_seconds, Loader
+from .zspotify import ZSpotify
 import traceback
 
-from utils import Loader
 
 def get_saved_tracks() -> list:
     """ Returns user's saved tracks """

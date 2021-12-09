@@ -2,15 +2,15 @@ from librespot.audio.decoders import AudioQuality
 from tabulate import tabulate
 import os
 
-from album import download_album, download_artist_albums
-from const import TRACK, NAME, ID, ARTIST, ARTISTS, ITEMS, TRACKS, EXPLICIT, ALBUM, ALBUMS, \
+from .album import download_album, download_artist_albums
+from .const import TRACK, NAME, ID, ARTIST, ARTISTS, ITEMS, TRACKS, EXPLICIT, ALBUM, ALBUMS, \
     OWNER, PLAYLIST, PLAYLISTS, DISPLAY_NAME
-from playlist import get_playlist_songs, get_playlist_info, download_from_user_playlist, download_playlist
-from podcast import download_episode, get_show_episodes
-from termoutput import Printer, PrintChannel
-from track import download_track, get_saved_tracks
-from utils import splash, split_input, regex_input_for_urls
-from zspotify import ZSpotify
+from .playlist import get_playlist_songs, get_playlist_info, download_from_user_playlist, download_playlist
+from .podcast import download_episode, get_show_episodes
+from .termoutput import Printer, PrintChannel
+from .track import download_track, get_saved_tracks
+from .utils import splash, split_input, regex_input_for_urls
+from .zspotify import ZSpotify
 
 SEARCH_URL = 'https://api.spotify.com/v1/search'
 

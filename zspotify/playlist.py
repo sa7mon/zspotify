@@ -1,8 +1,8 @@
-from const import ITEMS, ID, TRACK, NAME
-from termoutput import Printer
-from track import download_track
-from utils import split_input
-from zspotify import ZSpotify
+from .const import ITEMS, ID, TRACK, NAME
+from .termoutput import Printer
+from .track import download_track
+from .utils import split_input
+from .zspotify import ZSpotify
 
 MY_PLAYLISTS_URL = 'https://api.spotify.com/v1/me/playlists'
 PLAYLISTS_URL = 'https://api.spotify.com/v1/playlists'

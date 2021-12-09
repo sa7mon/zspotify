@@ -14,10 +14,10 @@ import requests
 from librespot.audio.decoders import VorbisOnlyAudioQuality
 from librespot.core import Session
 
-from const import TYPE, \
+from .const import TYPE, \
     PREMIUM, USER_READ_EMAIL, OFFSET, LIMIT, \
     PLAYLIST_READ_PRIVATE, USER_LIBRARY_READ
-from config import Config
+from .config import Config
 
 class ZSpotify:    
     SESSION: Session = None

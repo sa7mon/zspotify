@@ -10,9 +10,9 @@ from typing import List, Tuple
 import music_tag
 import requests
 
-from const import ARTIST, GENRE, TRACKTITLE, ALBUM, YEAR, DISCNUMBER, TRACKNUMBER, ARTWORK, \
+from .const import ARTIST, GENRE, TRACKTITLE, ALBUM, YEAR, DISCNUMBER, TRACKNUMBER, ARTWORK, \
     WINDOWS_SYSTEM, ALBUMARTIST
-from zspotify import ZSpotify
+from .zspotify import ZSpotify
 
 
 class MusicFormat(str, Enum):
