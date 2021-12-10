@@ -1,4 +1,3 @@
-from . import __main__
 from . import album
 from . import app
 from . import config
